@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.jumbotron {
+    background-image: url(../imgs/vitrine.jpg);
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+
+.social a[href='http://facebook.com/betterimages'] {
+    background: url(../imgs/icone-face.png);
+    background-size: 36px 36px
+}
+
+.social a[href='http://twitter.com/betterimages'] {
+    background: url(../imgs/icone-twitter.png);
+    background-size: 36px 36px
+}
+
+.social a[href='http://instagram.com/betterimages'] {
+    background: url(../imgs/icone-insta.png);
+    background-size: 36px 36px
+}
+
+.social a {
+    display: block;
+    width: 36px;
+    height: 36px;
+    text-indent: -9999px;
+}
+
+.social li {
+    display: inline-block;
+    margin-left: 1em;
+}
+
+.banner-container {
+    background: #f8f9fa;
+    padding: 210px 0;
+    text-align: center;
+}
+
+.page-title span {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.app-button {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    border: 1px solid #007bff;
+    color: #007bff;
+    transition: all 0.3s ease-in-out;
+}
+
+.app-button:hover {
+    background: #007bff;
+    color: #fff;
+}
+
+.app-button--primary {
+    background: #007bff;
+    color: #fff;
+}
+
+.app-button--primary:hover {
+    background: #0056b3;
+}
+
+.hall {
+    background-color: #795548;
+}
+
+/* Sombra no SVG */
+.svg-shadow {
+    filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.3));
+}
+
+/* Container do título para alinhar corretamente */
+.page-title {
+    display: inline-block;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #2e7d32;
+}
+
+/* Animação das letras */
+.letter {
+    display: inline-block;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUpLetter 0.5s ease-out forwards;
+}
+
+/* Animação fade-in e subida suave */
+@keyframes fadeInUpLetter {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.form-control::-webkit-input-placeholder {
+    font-style: bold;
+    font-size: 15px;
+}
+
+
+.card-login,
+.btn,
+.asideContent,
+.hall {
+    filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.3));
+}

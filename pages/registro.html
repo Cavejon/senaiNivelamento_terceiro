@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Registro</title>
+</head>
+
+<body>
+    <h1>Registro de Usuário</h1>
+    <div class="input-group mb-2">
+        <input id="emailInputRegistro" class="form-control" type="text" placeholder="E-mail" aria-label="E-mail">
+    </div>
+
+    <script>
+
+        window.onload = function () {
+            const email = localStorage.getItem('userEmail');
+            if (email) {
+                document.getElementById('emailInputRegistro').value = email;
+            }
+        }
+    </script>
+</body>
+
+</html>
