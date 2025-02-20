@@ -1,0 +1,26 @@
+.gradient-custom-2 {
+    /* fallback for old browsers */
+    background: #2e7d32;
+
+    background: -webkit-linear-gradient(to right, #2e7d32, #66bb6a, #81c784, #a5d6a7);
+    /* Para navegadores Webkit (Chrome, Safari) */
+    background: linear-gradient(to right, #2e7d32, #66bb6a, #81c784, #a5d6a7);
+    filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.3));
+}
+
+@media (min-width: 768px) {
+    .gradient-form {
+        height: 100vh !important;
+    }
+}
+
+@media (min-width: 769px) {
+    .gradient-custom-2 {
+        border-top-right-radius: .3rem;
+        border-bottom-right-radius: .3rem;
+    }
+}
+
+.gradient-form{
+    filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.3));
+}
