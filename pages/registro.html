@@ -6,20 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="/css/login.css">
-    <title>SCAmbiental - Login e Registro</title>
+    <link rel="stylesheet" href="../css/login.css">
+    <title>SCAmbiental - Registro</title>
 </head>
 
 <body>
-    <section class=" gradient-form" style="height: 10rem; background-color: #eee;">
+    <section class="gradient-form p-5" style="height: 10rem; background-color: #eee;">
         <div class="container py-2">
-            <div class="row d-flex justify-content-center align-items-center ">
+            <div class="row d-flex justify-content-center align-items-center">
                 <div class="col-xl-9">
                     <div class="card rounded-3 text-black">
                         <div class="row g-0">
                             <div class="col-lg-6 d-flex align-items-center gradient-custom-2">
                                 <div class="text-white px-3 py-4 p-md-5 mx-md-4">
-                                    <h4 class="mb-4">Queimada são um problema?</h4>
+                                    <h4 class="mb-4">Queimadas são um problema?</h4>
                                     <p class="small mb-0">As queimadas são um problema ambiental grave, causando
                                         destruição da fauna e flora, piora na
                                         qualidade do ar e impactos climáticos severos. Todos os anos, milhares de
@@ -32,49 +32,33 @@
                             </div>
                             <div class="col-lg-6">
                                 <div class="card-body p-md-3 mx-md-4">
-
                                     <div class="text-center">
-                                        <svg class="svg-shadow" width="150" height="150" viewBox="0 0 200 200"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <circle cx="100" cy="100" r="90" stroke="green" stroke-width="5"
-                                                fill="lightgreen" />
-                                            <path d="M100 40 C120 60, 140 100, 100 160 C60 100, 80 60, 100 40 Z"
-                                                fill="green" />
-                                            <line x1="100" y1="160" x2="100" y2="180" stroke="saddlebrown"
-                                                stroke-width="5" />
-                                        </svg>
-                                        <h4 class="mt-1 mb-5 pb-1">Queimadas destroem<br><span
-                                                style="font-size: 1.3rem;">Consciência constrói!</span></h4>
+                                        <h4 class="mt-3 mb-5 pb-1">SCAmbiental registre-se</h4>
                                     </div>
-
-                                    <form>
-                                        <p>Insira suas credenciais de acesso.</p>
-
+                                    <form id="registerForm">
+                                        <p>Preencha os dados abaixo.</p>
                                         <div class="form-outline mb-4">
-                                            <input type="email" id="emailInputRegistro" class="form-control" />
-                                            <label class="form-label" for="form2Example11">E-mail</label>
+                                            <input type="email" id="emailRegistro" class="form-control" />
+                                            <label class="form-label" for="emailRegistro">E-mail</label>
                                         </div>
-
                                         <div class="form-outline mb-4">
-                                            <input type="password" id="senhaInputRegistro" class="form-control" />
-                                            <label class="form-label" for="form2Example22">Senha</label>
+                                            <input type="password" id="senhaRegistro" class="form-control" />
+                                            <label class="form-label" for="senhaRegistro">Senha</label>
                                         </div>
-
                                         <div class="form-outline mb-4">
-                                            <input type="password" id="senhaInputRegistro" class="form-control" />
-                                            <label class="form-label" for="form2Example22">Confirme sua enha</label>
+                                            <input type="password" id="confirmSenha" class="form-control" />
+                                            <label class="form-label" for="confirmSenha">Confirme a senha</label>
                                         </div>
-
                                         <div class="text-center pt-1 mb-2 pb-1">
-                                            <button class="btn text-white btn-block fa-lg btn-success mb-3"
-                                                type="button">Log in</button>
+                                            <button class="btn btn-success text-white btn-block fa-lg mb-3"
+                                                type="submit" onclick="registerUserContent()">Registrar</button>
                                         </div>
-                                        <div class="d-flex align-items-center justify-content-center ">
+                                        <div class="d-flex align-items-center justify-content-center">
                                             <p class="mb-0 me-2">Já possui conta?</p>
-                                            <button type="button" class="btn btn-outline-success">Acesse agora</button>
+                                            <a href="login.html"><button type="button"
+                                                    class="btn btn-outline-success">Acesse agora</button></a>
                                         </div>
                                     </form>
-
                                 </div>
                             </div>
                         </div>
@@ -84,16 +68,9 @@
         </div>
     </section>
 
-    <script>
-
-        window.onload = function () {
-            const email = localStorage.getItem('userEmail');
-            if (email) {
-                document.getElementById('emailInputRegistro').value = email;
-            }
-        }
-    </script>
-
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../js/registerCredential.js"></script>
+    <script src="../js/storageCredential.js"></script>
 </body>
 
 </html>

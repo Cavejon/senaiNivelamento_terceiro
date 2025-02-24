@@ -22,14 +22,13 @@
             Menu
         </button>
         <div class="container">
-
             <a href="/index.html" class="navbar-brand">SCA Ambiental</a>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="dropdown dropdown-divider"></li>
                     <li><a href="/pages/sobreNos.html" class="nav-link">Sobre Nós</a></li>
-                    <li><a href="#" class="nav-link">Entre em Contato</a></li>
-                    <li><a href="/pages/login.html" class="nav-link">Login</a></li>
+                    <li><a href="/pages/entreContato.html" class="nav-link">Entre em Contato</a></li>
+                    <li id="authLink"><a href="/pages/login.html" class="nav-link">Login</a></li>
                 </ul>
             </div>
         </div>
@@ -53,7 +52,8 @@
                         esse impacto.
                     </p>
                     <div class="d-flex gap-3 justify-content-center">
-                        <a class="app-button btn-success" href="https://github.com/Cavejon/senaiNivelamento_terceiro">GitHub</a>
+                        <a class="app-button btn-success"
+                            href="https://github.com/Cavejon/senaiNivelamento_terceiro">GitHub</a>
                     </div>
                 </div>
             </div>
@@ -109,7 +109,8 @@
                             <div class="badge bg-gradient rounded-pill mb-2 text-light"
                                 style="background-color: #2e7d32;">News
                             </div>
-                            <a class="text-decoration-none link-dark stretched-link text-dark" href="#">
+                            <a class="text-decoration-none link-dark stretched-link text-dark"
+                                href="https://mundoeducacao.uol.com.br/geografia/queimadas.htm#:~:text=As%20consequ%C3%AAncias%20das%20queimadas%2C%20de,ser%20humano%2C%20quando%20inalados%20imediatamente.">
                                 <h5 class="card-title mb-3">Impactos das Queimadas</h5>
                             </a>
                             <p class="card-text mb-0">As queimadas destroem florestas, ameaçam a fauna e contribuem para
@@ -132,7 +133,8 @@
                             <div class="badge bg-gradient rounded-pill mb-2 text-light"
                                 style="background-color: #2e7d32;">News
                             </div>
-                            <a class="text-decoration-none link-dark stretched-link text-dark" href="#">
+                            <a class="text-decoration-none link-dark stretched-link text-dark"
+                                href="https://www.gov.br/dnit/pt-br/assuntos/portais-tematicos/br-280-sc/noticias/queimadas-prevenir-e-melhor-que-combater">
                                 <h5 class="card-title mb-3">Como Prevenir?</h5>
                             </a>
                             <p class="card-text mb-0">Evite queimadas ilegais, denuncie focos de incêndio e apoie
@@ -156,7 +158,8 @@
                             <div class="badge bg-gradient rounded-pill mb-2 text-light"
                                 style="background-color: #2e7d32;">News
                             </div>
-                            <a class="text-decoration-none link-dark stretched-link text-dark" href="#">
+                            <a class="text-decoration-none link-dark stretched-link text-dark"
+                                href="https://www.to.gov.br/secom/queimadas-podem-prejudicar-o-meio-ambiente-e-a-saude-humana/2wciptzt7u22#:~:text=A%20fuma%C3%A7a%20e%20a%20fuligem,motoristas%20e%20provocar%20acidentes%20graves.">
                                 <h5 class="card-title mb-3">Consequências para a Saúde</h5>
                             </a>
                             <p class="card-text mb-0">A fumaça das queimadas causa problemas respiratórios e agrava
@@ -177,10 +180,8 @@
                     </div>
                     <div class="ms-xl-4">
                         <div class="input-group mb-1">
-                            <input id="emailInput" class="form-control" type="text" placeholder="Insira seu e-mail"
-                                aria-label="Insira seu e-mail">
-                            <button onclick="registerMailer()" class="btn btn-outline-light"
-                                type="button">Registre</button>
+                            <a href="pages/registro.html"><button class="btn btn-outline-light"
+                                    type="button">Registre-Se</button></a>
                         </div>
                     </div>
 
@@ -192,14 +193,11 @@
 
     <footer class="text-white py-3" style="background-color: #81c784;">
         <div class="container d-flex justify-content-between align-items-center">
-            <!-- Conteúdo à esquerda -->
             <div>
                 <p>&copy; 2025 Todos os direitos reservados.</p>
                 <p>Desenvolva um site que promova a sustentabilidade, com foco em práticas ecológicas,
                     reciclagem e a importância da preservação ambiental.</p>
             </div>
-
-            <!-- Mapa à direita -->
             <div style="width: 30%; height: 200px; margin-left: 20px;">
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3578.059321002072!2d-48.856011324593!3d-26.259738066238068!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94deaf52c93f75d9%3A0x28ae523a1a3be265!2sUniSENAI%20Campus%20Joinville!5e0!3m2!1spt-BR!2sbr!4v1740006933222!5m2!1spt-BR!2sbr"
@@ -213,9 +211,26 @@
 
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="/js/homePageJs.js"></script>
-    <script src="/js/registerStorage.js"></script>
+    <script src="/js/loginCredential.js"></script>
+    <script src="/js/storageCredential.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            let user = sessionStorage.getItem("loggedUser");
+            let authLink = document.getElementById("authLink");
+
+            if (user) {
+                authLink.innerHTML = '<a href="#" class="nav-link" id="logoutBtn">Sair</a>';
+                document.getElementById("logoutBtn").addEventListener("click", function () {
+                    sessionStorage.removeItem("loggedUser");
+                    window.location.href = "pages/login.html";
+                });
+            }
+        });
+    </script>
 </body>
 
 </html>

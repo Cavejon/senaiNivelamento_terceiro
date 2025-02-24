@@ -4,40 +4,6 @@
     box-sizing: border-box;
 }
 
-.jumbotron {
-    background-image: url(../imgs/vitrine.jpg);
-    background-size: cover;
-    background-position: center;
-    color: #fff;
-}
-
-.social a[href='http://facebook.com/betterimages'] {
-    background: url(../imgs/icone-face.png);
-    background-size: 36px 36px
-}
-
-.social a[href='http://twitter.com/betterimages'] {
-    background: url(../imgs/icone-twitter.png);
-    background-size: 36px 36px
-}
-
-.social a[href='http://instagram.com/betterimages'] {
-    background: url(../imgs/icone-insta.png);
-    background-size: 36px 36px
-}
-
-.social a {
-    display: block;
-    width: 36px;
-    height: 36px;
-    text-indent: -9999px;
-}
-
-.social li {
-    display: inline-block;
-    margin-left: 1em;
-}
-
 .banner-container {
     background: #f8f9fa;
     padding: 210px 0;

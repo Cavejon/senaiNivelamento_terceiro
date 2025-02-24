@@ -1,0 +1,46 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #f8f9fa;
+}
+
+.contact{
+    filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.3));
+}
+.col-md-3 {
+    background: #66bb6a;
+    padding: 4%;
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+}
+
+.contact-info img {
+    margin-bottom: 15%;
+}
+
+.contact-info h2 {
+    margin-bottom: 10%;
+}
+
+.col-md-9 {
+    background: #fff;
+    padding: 3%;
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+}
+
+.contact-form label {
+    font-weight: 600;
+}
+
+.contact-form button {
+    background: #2e7d32;
+    color: #fff;
+    font-weight: 600;
+    width: 25%;
+}
+
+.contact-form button:focus {
+    box-shadow: none;
+}
