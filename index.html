@@ -215,22 +215,7 @@
     <script src="/js/storageCredential.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-
-
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            let user = sessionStorage.getItem("loggedUser");
-            let authLink = document.getElementById("authLink");
-
-            if (user) {
-                authLink.innerHTML = '<a href="#" class="nav-link" id="logoutBtn">Sair</a>';
-                document.getElementById("logoutBtn").addEventListener("click", function () {
-                    sessionStorage.removeItem("loggedUser");
-                    window.location.href = "pages/login.html";
-                });
-            }
-        });
-    </script>
+    <script src="/js/auth.js"></script>
 </body>
 
 </html>

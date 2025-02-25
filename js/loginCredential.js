@@ -53,9 +53,37 @@ function loginUserContent() {
 
 
         sessionStorage.setItem("loggedUser", email);
-        window.location.href = "../index.html";
+        setTimeout(() => {
+            let timerInterval;
+            Swal.fire({
+                title: "Seja Bem Vindo!",
+                html: "Se possuir alguma sugestão, entre em contato!.",
+                timer: 2000,
+                timerProgressBar: true,
+                didOpen: () => {
+                    Swal.showLoading();
+                    const timer = Swal.getPopup().querySelector("b");
+                    timerInterval = setInterval(() => {
+                        timer.textContent = `${Swal.getTimerLeft()}`;
+                    }, 100);
+                },
+                willClose: () => {
+                    clearInterval(timerInterval);
+                }
+            }).then((result) => {
+                /* Read more about handling dismissals below */
+                if (result.dismiss === Swal.DismissReason.timer) {
+                    console.log("I was closed by the timer");
+                }
+            }).then(() => {
+                window.location.href = "../index.html";
+            });
+        });
     });
 };
+
+
+
 
 function credentialInvalid() {
     const user = sessionStorage.getItem("loggedUser");

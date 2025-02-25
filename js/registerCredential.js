@@ -16,6 +16,45 @@ function registerUserContent() {
             });
             return;
         }
+        if (senha.length < 8) {
+            Swal.fire({
+                icon: 'error',
+                title: 'Senhas muito fraca!',
+                text: 'Por favor, insira a uma senha maior.',
+                confirmButtonText: 'OK',
+                confirmButtonColor: 'red'
+            });
+            return;
+        }else if (senha.search(/[a-z]/) < 0) {
+            Swal.fire({
+                icon: 'error',
+                title: 'Senhas muito fraca!',
+                text: 'Por favor, sua senha deve conter letras minusculas.',
+                confirmButtonText: 'OK',
+                confirmButtonColor: 'red'
+            });
+            return;
+        }
+        if(senha.search(/[A-Z]/) < 0) {
+            Swal.fire({
+                icon: 'error',
+                title: 'Senhas muito fraca!',
+                text: 'Por favor, sua senha deve conter letras maiusculas.',
+                confirmButtonText: 'OK',
+                confirmButtonColor: 'red'
+            });
+            return;
+        }
+        if(senha.search(/[0-9]/) < 0){
+            Swal.fire({
+                icon: 'error',
+                title: 'Senhas muito fraca!',
+                text: 'Por favor, sua senha deve conter caracteres numéricos.',
+                confirmButtonText: 'OK',
+                confirmButtonColor: 'red'
+            });
+            return;
+        }
         if (senha !== confirmSenha) {
             Swal.fire({
                 icon: 'error',

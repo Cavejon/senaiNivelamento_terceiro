@@ -8,7 +8,14 @@ document.addEventListener("DOMContentLoaded", function () {
         let comentario = document.getElementById("comment").value.trim();
 
         if (nome === "" || sobrenome === "" || email === "" || comentario === "") {
-            alert("Por favor, preencha todos os campos.");
+            Swal.fire({
+                icon: 'error',
+                title: 'Campos vázios',
+                text: 'Por favor, preencha todos os campos.',
+                confirmButtonText: 'OK',
+                confirmButtonColor: 'red'
+            });
+            return;
             return;
         }
 
