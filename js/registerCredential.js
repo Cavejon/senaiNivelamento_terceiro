@@ -45,6 +45,16 @@ function registerUserContent() {
             });
             return;
         }
+        if(email.search(/[A-Za-z0-9._%-]+@[A-Za-z0-9._%-]+\\.[a-z]{2,}/)){
+            Swal.fire({
+                icon: 'error',
+                title: 'Formato de e-mail incorreto!',
+                text: 'Por favor, insira um e-mail válido.',
+                confirmButtonText: 'OK',
+                confirmButtonColor: 'red'
+            });
+            return;
+        }
         if(senha.search(/[0-9]/) < 0){
             Swal.fire({
                 icon: 'error',

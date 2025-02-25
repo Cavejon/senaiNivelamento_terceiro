@@ -16,7 +16,6 @@ document.addEventListener("DOMContentLoaded", function () {
                 confirmButtonColor: 'red'
             });
             return;
-            return;
         }
 
         let telefone = "5547996373949";
