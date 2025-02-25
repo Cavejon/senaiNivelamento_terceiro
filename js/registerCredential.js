@@ -25,7 +25,7 @@ function registerUserContent() {
                 confirmButtonColor: 'red'
             });
             return;
-        }else if (senha.search(/[a-z]/) < 0) {
+        } else if (senha.search(/[a-z]/) < 0) {
             Swal.fire({
                 icon: 'error',
                 title: 'Senhas muito fraca!',
@@ -35,7 +35,7 @@ function registerUserContent() {
             });
             return;
         }
-        if(senha.search(/[A-Z]/) < 0) {
+        if (senha.search(/[A-Z]/) < 0) {
             Swal.fire({
                 icon: 'error',
                 title: 'Senhas muito fraca!',
@@ -45,17 +45,7 @@ function registerUserContent() {
             });
             return;
         }
-        if(email.search(/[A-Za-z0-9._%-]+@[A-Za-z0-9._%-]+\\.[a-z]{2,}/)){
-            Swal.fire({
-                icon: 'error',
-                title: 'Formato de e-mail incorreto!',
-                text: 'Por favor, insira um e-mail válido.',
-                confirmButtonText: 'OK',
-                confirmButtonColor: 'red'
-            });
-            return;
-        }
-        if(senha.search(/[0-9]/) < 0){
+        if (senha.search(/[0-9]/) < 0) {
             Swal.fire({
                 icon: 'error',
                 title: 'Senhas muito fraca!',
@@ -75,7 +65,7 @@ function registerUserContent() {
             });
             return;
         }
-        if (localStorage.getItem(email)) {
+        if (localStorage.getItem(email) !== null) {
             Swal.fire({
                 icon: 'error',
                 title: 'E-mail já cadastrado!',
@@ -85,6 +75,7 @@ function registerUserContent() {
             });
             return;
         }
+
         localStorage.setItem(email, JSON.stringify({ email, senha }));
 
         Swal.fire({

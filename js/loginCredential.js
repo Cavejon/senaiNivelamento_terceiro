@@ -11,7 +11,7 @@ function loginUserContent() {
             Swal.fire({
                 icon: 'error',
                 title: 'Usuário não localizado!',
-                text: 'Por favor, insira um usúario válido!.',
+                text: 'Por favor, insira um usúario válido.',
                 confirmButtonText: 'OK',
                 confirmButtonColor: 'red'
             });
@@ -30,7 +30,6 @@ function loginUserContent() {
             return;
         }
         if (email.trim() == "") {
-            console.log(email.trim)
             Swal.fire({
                 icon: 'error',
                 title: 'E-mail não encontrado',
@@ -71,9 +70,7 @@ function loginUserContent() {
                     clearInterval(timerInterval);
                 }
             }).then((result) => {
-                /* Read more about handling dismissals below */
                 if (result.dismiss === Swal.DismissReason.timer) {
-                    console.log("I was closed by the timer");
                 }
             }).then(() => {
                 window.location.href = "../index.html";
