@@ -1,41 +1,73 @@
-<h1>🌱 Sustentabilidade e Consciência Ambiental</h1>
-    <h2>📌 Descrição</h2>
-    <p>Este projeto faz parte do <strong>1º Desafio Individual de Desenvolvimento Web - 5º Período ADS</strong>. O objetivo é criar um site dinâmico e responsivo utilizando <strong>HTML5, CSS3 e JavaScript</strong>, abordando a importância da sustentabilidade e consciência ambiental.</p>
-    <h2>🎯 Objetivos</h2>
-    <ul>
-        <li>Promover práticas sustentáveis e ecológicas;</li>
-        <li>Abordar temas como reciclagem, consumo consciente e impacto ambiental;</li>
-        <li>Criar uma interface acessível, informativa e interativa.</li>
-    </ul>
-    <h2>🛠 Tecnologias Utilizadas</h2>
-    <ul>
-        <li>HTML5</li>
-        <li>CSS3</li>
-        <li>JavaScript</li>
-    </ul>
-    <h2>🎨 Identidade Visual</h2>
-    <ul>
-        <li><strong>Verde Escuro (#2e7d32)</strong> – Representa a natureza e sustentabilidade.</li>
-        <li><strong>Verde Claro (#81c784)</strong> – Para elementos interativos.</li>
-        <li><strong>Marrom (#795548)</strong> – Para um tom orgânico e natural.</li>
-        <li><strong>Branco (#ffffff)</strong> – Para melhor leitura e contraste.</li>
-    </ul>
-    <h2>📋 Funcionalidades</h2>
-    <ul>
-        <li><strong>Tela de Login:</strong> Implementação de login funcional com validação de credenciais.</li>
-        <li><strong>Formulários:</strong> Validação em JavaScript para campos como e-mail e senha.</li>
-        <li><strong>Multimídia:</strong> Uso de imagens, vídeos e textos relacionados ao tema.</li>
-        <li><strong>Responsividade:</strong> Design adaptável para diversos dispositivos.</li>
-        <li><strong>Navegação entre Páginas:</strong> Pelo menos quatro páginas distintas.</li>
-    </ul>
-    <h2>📅 Prazo de Entrega</h2>
-    <p>O projeto deve ser entregue entre <strong>17/02/2025</strong> e <strong>28/02/2025</strong>.</p>
-    <h2>✅ Critérios de Avaliação</h2>
-    <ol>
-        <li><strong>Funcionalidade:</strong> O site deve estar completamente funcional.</li>
-        <li><strong>Usabilidade e Responsividade:</strong> Fácil navegação e adaptação a diferentes dispositivos.</li>
-        <li><strong>Criatividade:</strong> Inovação na abordagem do tema.</li>
-        <li><strong>Conformidade com as Regras:</strong> Seguir todas as diretrizes estabelecidas.</li>
-        <li><strong>Documentação:</strong> Código bem estruturado e comentado.</li>
-    </ol>
-    <h2>🚀 Vamos construir um mundo mais sustentável juntos! 🌎</h2>
+<h1 align="center">🔥 Projeto Web: Consciência Ambiental e Queimadas 🔥</h1>
+
+<p align="center">
+  <strong>Desenvolvido como parte do 1º Desafio Individual de Desenvolvimento Web - 5º Período de ADS.</strong>
+</p>
+
+<h2>🌍 Sobre o Projeto</h2>
+<p>
+  Este projeto tem como objetivo conscientizar sobre os impactos ambientais das queimadas, suas causas e soluções. 
+  Desenvolvido como um site dinâmico e responsivo, ele proporciona uma experiência interativa e informativa para os usuários.
+</p>
+
+---
+
+<h2>💻 Tecnologias Utilizadas</h2>
+<ul>
+  <li>✅ <strong>HTML5</strong> – Estruturação semântica das páginas</li>
+  <li>✅ <strong>CSS3</strong> – Estilização e responsividade com Flexbox/Grid</li>
+  <li>✅ <strong>JavaScript</strong> – Validação de formulários e interatividade</li>
+  <li>✅ <strong>Bootstrap</strong> – Estilização otimizada e responsiva</li>
+  <li>✅ <strong>Chart.js</strong> – Exibição dinâmica de gráficos sobre queimadas</li>
+  <li>✅ <strong>SweetAlert2</strong> – Alertas personalizados para melhor experiência do usuário</li>
+  <li>✅ <strong>LocalStorage</strong> – Armazenamento dos dados de cadastro no navegador</li>
+  <li>✅ <strong>Font Awesome</strong> – Ícones para uma interface mais intuitiva</li>
+  <li>✅ <strong>Git/GitHub</strong> – Versionamento e colaboração no projeto</li>
+</ul>
+
+---
+
+<h2>🌱 Principais Funcionalidades</h2>
+<ul>
+  <li>✔ Tela de Login com validação de credenciais</li>
+  <li>✔ Formulários interativos validados com JavaScript</li>
+  <li>✔ Gráficos dinâmicos utilizando Chart.js para ilustrar dados sobre queimadas</li>
+  <li>✔ Multimídia (vídeos e imagens) para maior impacto visual</li>
+  <li>✔ Alertas personalizados com SweetAlert2 para melhor usabilidade</li>
+  <li>✔ Armazenamento de dados no LocalStorage, permitindo persistência das informações de cadastro</li>
+  <li>✔ Design responsivo, garantindo acessibilidade em qualquer dispositivo</li>
+  <li>✔ Navegação intuitiva entre páginas informativas</li>
+</ul>
+
+---
+
+<h2>🚀 Como Instalar e Utilizar</h2>
+
+<h3>🔹 1. Clone o repositório</h3>
+<p>Abra o terminal e execute:</p>
+
+<pre><code>git clone https://github.com/seu-usuario/seu-repositorio.git</code></pre>
+
+<h3>🔹 2. Acesse o diretório do projeto</h3>
+<pre><code>cd seu-repositorio</code></pre>
+
+<h3>🔹 3. Instale as dependências</h3>
+<p>Se houver pacotes necessários, instale-os com:</p>
+<pre><code>npm install</code></pre>
+
+<h3>🔹 4. Execute o projeto</h3>
+<p>Basta abrir o arquivo <strong>index.html</strong> no navegador ou usar uma extensão como "Live Server" no VS Code.</p>
+
+---
+
+<h2>💡 Desenvolvimento Contínuo</h2>
+<p>
+  O projeto está em constante evolução, com melhorias e ajustes contínuos para reforçar conhecimentos em desenvolvimento web e boas práticas de programação.
+</p>
+
+---
+
+<h2>📩 Contato</h2>
+<p>Se tiver dúvidas ou sugestões, entre em contato pelo e-mail: <strong>seu-email@exemplo.com</strong></p>
+
+<p align="center">🚀 Desenvolvido por <strong>Seu Nome</strong> | 2025</p>
