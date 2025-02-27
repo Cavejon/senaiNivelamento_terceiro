@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCAmbiental - Gráficos</title>
+    <link rel="stylesheet" href="../css/graphics.css">
+    <link rel="stylesheet" href="../css/homePage.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="/index.html">SCA Ambiental</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="/pages/sobreNos.html">Sobre Nós</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/pages/entreContato.html">Entre em Contato</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/pages/graficos.html">Gráfico</a>
+                </li>
+                <li class="nav-item" id="authLink">
+                    <a class="nav-link" href="/pages/login.html">Login</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="banner-container">
+        <div class="container">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-md-5 col-lg-4 text-center">
+                    <svg class="svg-shadow" width="300" height="300" viewBox="0 0 200 200"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="100" cy="100" r="90" stroke="green" stroke-width="5" fill="lightgreen" />
+                        <path d="M100 40 C120 60, 140 100, 100 160 C60 100, 80 60, 100 40 Z" fill="green" />
+                        <line x1="100" y1="160" x2="100" y2="180" stroke="saddlebrown" stroke-width="5" />
+                    </svg>
+                </div>
+                <div class="col-md-5 col-lg-4 text-center text-md-start">
+                    <h3><strong>Queimadas no Brasil: Comparação entre 2023 e 2024</strong></h3>
+                    <p>
+                        As queimadas são um fenômeno recorrente no Brasil, impactando diretamente diversos biomas e
+                        contribuindo para a degradação ambiental. A análise dos dados de 2023 e 2024 revela um aumento
+                        na área queimada em 2024, evidenciando a necessidade de ações mais eficazes para o controle do
+                        fogo e preservação da biodiversidade.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="graficos text-light mb-4">
+        <div class="container">
+            <div class="row d-flex align-items-center">
+                <div class="col-lg-6">
+                    <div class="card">
+                        <div class="card-header text-dark">
+                            Gráfico 2024
+                        </div>
+                        <div class="card-body">
+                            <canvas id="grafico24" width="100px" height="100px" role="img"></canvas>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 pt-2">
+                    <div class="card">
+                        <div class="card-header text-dark">
+                            Gráfico 2023
+                        </div>
+                        <div class="card-body">
+                            <canvas id="grafico23" width="100px" height="110px" role="img"></canvas>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="hall text-light pt-5 p-4">
+        <div class="container">
+            <div class="row d-flex align-items-center">
+                <div class="col-lg-6">
+                    <h1>
+                        Queimadas em 2023
+                    </h1>
+                    <p>
+                        No ano de 2023, o total da área queimada foi de 29.500.000 hectares, atingindo diversos biomas
+                        brasileiros. Os mais afetados foram:
+                    <ul class="ml-4">
+                        <li>Amazônia: 16.500.000 hectares</li>
+                        <li>Cerrado: 7.800.000 hectares</li>
+                        <li>Caatinga: 3.300.000 hectares</li>
+                        <li>Mata Atlântica: 850.000 hectares</li>
+                        <li>Pampa: 520.000 hectares</li>
+                        <li>Pantanal: 430.000 hectares</li>
+                    </ul>
+                    A Amazônia foi o bioma mais atingido, representando mais da metade da área queimada em 2023. O
+                    Cerrado também sofreu grandes impactos, sendo um dos biomas mais suscetíveis ao fogo devido à
+                    sua vegetação característica.
+                    </p>
+                </div>
+                <div class="col-lg-6">
+                    <h1>
+                        Queimadas em 2024
+                    </h1>
+
+                    <p>
+                        Em 2024, os dados preliminares mostram um aumento significativo na área queimada, totalizando
+                        30.860.000 hectares. No entanto, os dados disponíveis até o momento indicam registros de
+                        queimadas apenas na Amazônia e na Mata Atlântica, com os seguintes valores:
+                    <ul class="ml-4">
+                        <li>Amazônia: 17.900.000 hectares</li>
+                        <li>Mata Atlântica: 896.000 hectares</li>
+                    </ul>
+                    O crescimento da área queimada na Amazônia em relação ao ano anterior acende um alerta para o
+                    agravamento do desmatamento e da destruição desse bioma, que desempenha um papel crucial na
+                    regulação climática global. A Mata Atlântica, apesar de apresentar um leve aumento nas
+                    queimadas, continua sendo um dos biomas mais preservados, mas altamente ameaçado pela
+                    urbanização e atividades humanas.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="embed-responsive embed-responsive-16by9 mb-1">
+        <iframe class="embed-responsive-item" 
+            src="https://www.youtube.com/embed/2fdoettwz8A" 
+            allowfullscreen>
+        </iframe>
+    </div>
+    
+    
+
+    <footer class="text-white py-3" style="background-color: #81c784;">
+        <div class="container footer-content d-flex justify-content-between align-items-center">
+            <div>
+                <p>&copy; 2025 Todos os direitos reservados.</p>
+                <p>Desenvolva um site que promova a sustentabilidade, com foco em práticas ecológicas,
+                    reciclagem e a importância da preservação ambiental.</p>
+            </div>
+            <div class="footer-container">
+                <div class="map-container">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3578.059321002072!2d-48.856011324593!3d-26.259738066238068!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94deaf52c93f75d9%3A0x28ae523a1a3be265!2sUniSENAI%20Campus%20Joinville!5e0!3m2!1spt-BR!2sbr!4v1740006933222!5m2!1spt-BR!2sbr"
+                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                        style="border:0; width: 100%; height: 100%;">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="/js/auth.js"></script>
+    <script src="../js/scripts.js"></script>
+    <script src="/js/graphic.js"></script>
+</body>
+
+</html>

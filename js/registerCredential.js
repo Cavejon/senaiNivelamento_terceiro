@@ -16,6 +16,17 @@ function registerUserContent() {
             });
             return;
         }
+
+        if (localStorage.getItem(email)) {
+            Swal.fire({
+                icon: 'error',
+                title: 'E-mail já cadastrado!',
+                text: 'Por favor, use outro e-mail ou faça login.',
+                confirmButtonText: 'OK',
+                confirmButtonColor: 'red'
+            });
+            return;
+        }
         if (senha.length < 8) {
             Swal.fire({
                 icon: 'error',
@@ -60,16 +71,6 @@ function registerUserContent() {
                 icon: 'error',
                 title: 'Senhas não coincidem!',
                 text: 'Por favor, insira a mesma senha nos dois campos.',
-                confirmButtonText: 'OK',
-                confirmButtonColor: 'red'
-            });
-            return;
-        }
-        if (localStorage.getItem(email) !== null) {
-            Swal.fire({
-                icon: 'error',
-                title: 'E-mail já cadastrado!',
-                text: 'Por favor, use outro e-mail ou faça login.',
                 confirmButtonText: 'OK',
                 confirmButtonColor: 'red'
             });
