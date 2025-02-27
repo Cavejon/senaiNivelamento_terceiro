@@ -51,11 +51,7 @@
 <h3>🔹 2. Acesse o diretório do projeto</h3>
 <pre><code>cd seu-repositorio</code></pre>
 
-<h3>🔹 3. Instale as dependências</h3>
-<p>Se houver pacotes necessários, instale-os com:</p>
-<pre><code>npm install</code></pre>
-
-<h3>🔹 4. Execute o projeto</h3>
+<h3>🔹 3. Execute o projeto</h3>
 <p>Basta abrir o arquivo <strong>index.html</strong> no navegador ou usar uma extensão como "Live Server" no VS Code.</p>
 
 ---
@@ -68,6 +64,6 @@
 ---
 
 <h2>📩 Contato</h2>
-<p>Se tiver dúvidas ou sugestões, entre em contato pelo e-mail: <strong>seu-email@exemplo.com</strong></p>
+<p>Se tiver dúvidas ou sugestões, entre em contato pelo e-mail: <strong>pedrolucascavejon@gmail.com</strong></p>
 
-<p align="center">🚀 Desenvolvido por <strong>Seu Nome</strong> | 2025</p>
+<p align="center">🚀 Desenvolvido por <strong>Pedro Lucas Cavejon</strong> | 2025</p>
