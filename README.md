@@ -6,8 +6,7 @@
 
 <h2>🌍 Sobre o Projeto</h2>
 <p>
-  Este projeto tem como objetivo conscientizar sobre os impactos ambientais das queimadas, suas causas e soluções. 
-  Desenvolvido como um site dinâmico e responsivo, ele proporciona uma experiência interativa e informativa para os usuários.
+  Este projeto visa conscientizar sobre os impactos ambientais das queimadas, suas causas e soluções. Desenvolvido como um site dinâmico e responsivo, proporciona uma experiência interativa e informativa aos usuários.
 </p>
 
 ---
@@ -24,6 +23,39 @@
   <li>✅ <strong>Font Awesome</strong> – Ícones para uma interface mais intuitiva</li>
   <li>✅ <strong>Git/GitHub</strong> – Versionamento e colaboração no projeto</li>
 </ul>
+
+---
+
+<h2>📁 Estrutura de Diretórios</h2>
+<p>A organização dos arquivos do projeto segue a estrutura abaixo:</p>
+<pre>
+<code>
+/.vscode
+/css
+    └── contato.css
+    └── graphics.css
+    └── homePage.css
+    └── login.css
+    └── mapGoogle.css
+/imgs
+    └── logo.png
+/js
+    └── auth.js
+    └── contact.js
+    └── homePage.js
+    └── loginCredential.js
+    └── registerCredential.js
+    └── scripts.js
+/pages
+    ├── sobreNos.html
+    └── entreContato.html
+    ├── login.html
+    └── registro.html
+    └── graficos.html
+index.html
+README.md
+</code>
+</pre>
 
 ---
 
@@ -45,8 +77,7 @@
 
 <h3>🔹 1. Clone o repositório</h3>
 <p>Abra o terminal e execute:</p>
-
-<pre><code>git clone https://github.com/seu-usuario/seu-repositorio.git</code></pre>
+<pre><code>git clone https://github.com/Cavejon/senaiNivelamento_terceiro.git</code></pre>
 
 <h3>🔹 2. Acesse o diretório do projeto</h3>
 <pre><code>cd seu-repositorio</code></pre>
