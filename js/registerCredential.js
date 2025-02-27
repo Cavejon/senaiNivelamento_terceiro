@@ -89,3 +89,17 @@ function registerUserContent() {
         });
     });
 }
+
+function mostrarSenha() {
+    var input = document.getElementById("senhaLogin");
+    var botao = document.getElementById("exibir1");
+    var botao = document.getElementById("exibir2");
+
+    if (input.type === "password") {
+        input.type = "text";
+        botao.innerHTML = '<i class="fa-solid fa-eye-slash"></i>';
+    } else {
+        input.type = "text";
+        botao.innerHTML = '<i class="fa-solid fa-eye"></i>';
+    }
+}

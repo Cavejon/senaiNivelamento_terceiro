@@ -16,9 +16,9 @@
                     <div class="card rounded-3 text-black">
                         <div class="row g-0">
                             <div class="col-lg-6">
-                               <a href="../index.html">
-                                <i class="fa-solid fa-house ml-3 mt-4 " style="color: #2e7d32;"></i>
-                               </a> 
+                                <a href="../index.html">
+                                    <i class="fa-solid fa-house ml-3 mt-4 " style="color: #2e7d32;"></i>
+                                </a>
                                 <div class="card-body p-md-3 mx-md-4">
                                     <div class="text-center">
                                         <svg class="svg-shadow" width="150" height="150" viewBox="0 0 200 200"
@@ -41,15 +41,25 @@
                                         </div>
                                         <div class="form-outline mb-4">
                                             <label class="form-label" for="senhaRegistro">Senha</label>
-                                            <input type="password" id="senhaRegistro" class="form-control" />
+                                            <div class="revelar">
+                                                <input type="password" id="senhaRegistro" class="form-control" />
+                                                <button type="button" onclick="mostrarSenha()" id="exibir1"
+                                                    class="text-muted rounded-right"><i
+                                                        class="fa-solid fa-eye"></i></button>
+                                            </div>
                                         </div>
                                         <div class="form-outline mb-4">
                                             <label class="form-label" for="confirmSenha">Confirme a senha</label>
-                                            <input type="password" id="confirmSenha" class="form-control" />
+                                            <div class="revelar">
+                                                <input type="password" id="confirmSenha" class="form-control" />
+                                                <button type="button" onclick="mostrarSenha()" id="exibir2"
+                                                    class="text-muted rounded-right"><i
+                                                        class="fa-solid fa-eye"></i></button>
+                                            </div>
                                         </div>
                                         <div class="text-center pt-1 mb-3 pb-1">
-                                            <button class="btn btn-success text-white btn-block mb-1"
-                                                type="submit" onclick="registerUserContent()">Registrar</button>
+                                            <button class="btn btn-success text-white btn-block mb-1" type="submit"
+                                                onclick="registerUserContent()">Registrar</button>
                                         </div>
                                         <div class="d-flex align-items-center justify-content-between">
                                             <p class="mb-0 me-2">Já possui conta?</p>

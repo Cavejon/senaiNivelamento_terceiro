@@ -19,6 +19,7 @@ function loginUserContent() {
         }
 
         user = JSON.parse(user);
+
         if (user.senha !== senha) {
             Swal.fire({
                 icon: 'error',
@@ -27,6 +28,7 @@ function loginUserContent() {
                 confirmButtonText: 'OK',
                 confirmButtonColor: 'red'
             });
+            console.log(user.senha)
             return;
         }
         if (email.trim() == "") {
@@ -79,9 +81,6 @@ function loginUserContent() {
     });
 };
 
-
-
-
 function credentialInvalid() {
     const user = sessionStorage.getItem("loggedUser");
 
@@ -93,5 +92,18 @@ function credentialInvalid() {
             confirmButtonColor: 'red'
         });
         window.location.href = "login.html";
+    }
+}
+
+function mostrarSenha() {
+    var input = document.getElementById("senhaLogin");
+    var botao = document.getElementById("exibir");
+
+    if (input.type === "password") {
+        input.type = "text";
+        botao.innerHTML = '<i class="fa-solid fa-eye-slash"></i>';
+    } else {
+        input.type = "password";
+        botao.innerHTML = '<i class="fa-solid fa-eye"></i>';
     }
 }
